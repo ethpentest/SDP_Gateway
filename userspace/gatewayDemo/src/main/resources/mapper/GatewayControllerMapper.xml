@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssgh.sdpgateway.mtls.mapper.GatewayControllerMapper">
+
+    <resultMap id="BaseResultMap" type="com.ssgh.sdpgateway.mtls.entity.GatewayController">
+            <id property="gatewayControllerId" column="gateway_controller_id" jdbcType="INTEGER"/>
+            <result property="gatewayControllerIp" column="gateway_controller_ip" jdbcType="VARCHAR"/>
+            <result property="gatewayControllerFlag" column="gateway_controller_flag" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        gateway_controller_id,gateway_controller_ip,gateway_controller_flag
+    </sql>
+</mapper>

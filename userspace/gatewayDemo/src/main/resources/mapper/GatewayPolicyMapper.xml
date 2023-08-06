@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssgh.sdpgateway.mtls.mapper.GatewayPolicyMapper">
+
+    <resultMap id="BaseResultMap" type="com.ssgh.sdpgateway.mtls.entity.GatewayPolicy">
+            <id property="policyClientIp" column="policy_client_ip" jdbcType="VARCHAR"/>
+            <id property="policyServicePort" column="policy_service_port" jdbcType="INTEGER"/>
+            <result property="policyFlag" column="policy_flag" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        policy_client_ip,policy_service_port,policy_flag
+    </sql>
+
+</mapper>

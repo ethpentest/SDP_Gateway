@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssgh.sdpgateway.mtls.mapper.GatewayServiceMapper">
+
+    <resultMap id="BaseResultMap" type="com.ssgh.sdpgateway.mtls.entity.GatewayService">
+            <id property="gatewayServiceId" column="gateway_service_id" jdbcType="INTEGER"/>
+            <result property="gatewayServicePort" column="gateway_service_port" jdbcType="INTEGER"/>
+            <result property="gatewayServiceProto" column="gateway_service_proto" jdbcType="VARCHAR"/>
+            <result property="gatewayServiceDescription" column="gateway_service_description" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        gateway_service_id,gateway_service_port,gateway_service_proto,
+        gateway_service_description
+    </sql>
+</mapper>
